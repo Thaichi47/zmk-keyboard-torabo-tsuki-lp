@@ -15,15 +15,6 @@
         };
     };
 
-    macros {
-        test: pass {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp N0 &kp N9 &kp NUMBER_1 &kp NUMBER_2 &kp LBRC>;
-            label = "PASS";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
