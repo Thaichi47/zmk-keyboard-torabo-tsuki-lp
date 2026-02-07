@@ -15,6 +15,15 @@
         };
     };
 
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp N0 &kp N9 &kp NUMBER_1 &kp NUMBER_2>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -50,11 +59,11 @@
 
         layer_3 {
             bindings = <
-&none             &none           &none           &none            &none           &none                            &none           &none      &none           &none            &none   &none
-&msc SCRL_LEFT    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &mkp MB5                         &msc SCRL_LEFT  &mkp MB5   &msc SCRL_UP    &msc SCRL_RIGHT  &trans  &trans
-&kp TAB           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MCLK       &msc SCRL_RIGHT  &none   &none   &mkp MB3        &mkp LCLK  &mkp RCLK       &none            &trans  &trans
-&kp LEFT_SHIFT    &kp F11         &kp F12         &out OUT_USB     &msc SCRL_DOWN  &mkp MB4         &trans  &trans  &trans          &mkp MB4   &msc SCRL_DOWN  &none            &trans  &trans
-&kp LEFT_CONTROL  &kp LEFT_GUI    &kp LEFT_ALT    &trans           &kp DELETE      &kp TAB          &trans  &trans  &trans          &none      &none           &trans           &trans  &trans
+&none             &none           &none           &none            &none           &none                            &none           &none      &none           &none            &none         &none
+&msc SCRL_LEFT    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &mkp MB5                         &msc SCRL_LEFT  &mkp MB5   &msc SCRL_UP    &msc SCRL_RIGHT  &kp C_VOL_UP  &bt BT_SEL 0
+&kp TAB           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MCLK       &msc SCRL_RIGHT  &none   &none   &mkp MB3        &mkp LCLK  &mkp RCLK       &none            &kp K_MUTE    &bt BT_SEL 1
+&kp LEFT_SHIFT    &kp F11         &kp F12         &out OUT_USB     &msc SCRL_DOWN  &mkp MB4         &trans  &trans  &trans          &mkp MB4   &msc SCRL_DOWN  &none            &kp C_VOL_DN  &bt BT_SEL 2
+&kp LEFT_CONTROL  &kp LEFT_GUI    &kp LEFT_ALT    &trans           &kp DELETE      &kp TAB          &trans  &trans  &trans          &none      &none           &new_macro       &trans        &trans
             >;
         };
     };
