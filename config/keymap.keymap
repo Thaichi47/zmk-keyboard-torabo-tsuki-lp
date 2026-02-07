@@ -69,11 +69,11 @@
 
         layer_4 {
             bindings = <
-&none      &none     &none     &none      &none    &none                            &none         &none   &none   &none            &none       &none
-&none      &kp Y     &kp U     &kp I      &kp O    &kp P                            &kp Q         &kp W   &kp E   &kp R            &kp T       &kp LSHFT
-&kp TAB    &kp H     &kp J     &kp K      &kp L    &kp SEMI   &trans  &trans        &kp A         &kp S   &kp D   &kp F            &kp G       &kp LCTRL
-&kp LSHFT  &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH   &trans  &kp NUMBER_3  &kp Z         &kp X   &kp C   &kp V            &kp B       &trans
-&kp LCTRL  &kp LGUI  &kp LALT  &trans     &trans   &kp SPACE  &trans  &pass         &kp NUMBER_4  &trans  &trans  &kp C_VOLUME_UP  &kp K_MUTE  &kp C_VOLUME_DOWN
+&none      &none     &none     &none      &none         &none                                     &none         &none   &none   &none            &none       &none
+&none      &kp Y     &kp U     &kp I      &kp O         &kp P                                     &kp Q         &kp W   &kp E   &kp R            &kp T       &kp LSHFT
+&kp TAB    &kp H     &kp J     &kp K      &kp L         &kp SEMI      &trans        &trans        &kp A         &kp S   &kp D   &kp F            &kp G       &kp LCTRL
+&kp LSHFT  &kp N     &kp M     &kp COMMA  &kp DOT       &kp FSLH      &trans        &kp NUMBER_3  &kp Z         &kp X   &kp C   &kp V            &kp B       &trans
+&kp LCTRL  &kp LGUI  &kp LALT  &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &pass         &kp NUMBER_4  &trans  &trans  &kp C_VOLUME_UP  &kp K_MUTE  &kp C_VOLUME_DOWN
             >;
         };
 
