@@ -49,11 +49,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans      &trans      &trans                      &trans          &trans         &trans            &trans             &trans         &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp LS(N6)      &kp LS(N7)     &kp LS(N8)        &kp LS(N9)         &kp LS(N0)     &trans
-&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &kp LEFT_BRACE  &kp MINUS      &kp EQUAL         &kp RIGHT_BRACE    &kp COLON      &trans
-&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &kp LS(MINUS)   &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &kp TAB         &kp DEL        &trans            &trans             &trans         &trans
+&none   &none             &none             &none       &none       &none                               &none       &none     &none        &none              &none            &none
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)                          &kp ESC     &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN      &kp END          &kp BACKSPACE
+&trans  &kp LC(NUMBER_6)  &kp LC(N7)        &kp LC(N8)  &kp LC(N9)  &kp LC(N0)  &none   &none           &kp F1      &kp F2    &kp F3       &kp F4             &kp F5           &kp F6
+&trans  &kp LS(CAPS)      &kp N7            &kp N8      &kp N9      &kp N0      &trans  &kp KP_NUMLOCK  &kp F7      &kp F8    &kp F9       &kp F10            &kp F11          &kp F12
+&trans  &trans            &trans            &trans      &trans      &trans      &trans  &none           &kp DELETE  &none     &none        &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp ENTER
             >;
         };
 
